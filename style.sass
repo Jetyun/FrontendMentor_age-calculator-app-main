@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap')
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+// BG=background
+//variables
+$overall-BG_and_line-color: hsl(0, 0%, 86%) //LightGrey
+$box-BG-color : hsl(0, 0%, 94%) //OffWhite
+$btn-BG-color_and_result-number-color: hsl(259, 100%, 65%)// purple
+$input-font_and_result-date-unit-color: hsl(0, 0%, 8%) //OffBlack
+$error-font_and_border-color: hsl(0, 100%, 67%) //LightRed
+$input-date-unit-color: hsl(0, 1%, 44%) //SmokeyGrey
+$font-family: 'Poppins', sans-serif
+
+
+body
+    background-color: $overall-BG_and_line-color
+    font-family: $font-family
+    height: 100vh
+
+button
+    background-color:  $btn-BG-color_and_result-number-color
+    height: 3.125rem
+    width: 3.125rem
+
+button:active
+    background-color: black
+    
+hr
+    top: 25%    
+    color: $input-date-unit-color
+input
+    border: 1px solid $overall-BG_and_line-color
+
+input:active, input:focus
+    border-color: $input-date-unit-color
+
+label
+    color: $input-date-unit-color
+    font-size: 0.75rem
+    letter-spacing: 2px
+
+.box
+    border-radius: 1.25rem 1.25rem 6.25rem 1.25rem
+    max-inline-size: 36.25rem
+
+.errorText
+    font-size: 9px
+    color: hsl(0, 100%, 67%)
+    display: none //if i used d-none in HTML, it will have !important, that is not amendable by Javascript
+
+.result
+    color: $input-font_and_result-date-unit-color
+    margin-block-end: -1.563rem
+    
+.result-num
+    color: $btn-BG-color_and_result-number-color
+
+.attribution 
+    font-size: 11px
+    text-align: center
+.attribution a 
+    color: hsl(228, 45%, 44%)
